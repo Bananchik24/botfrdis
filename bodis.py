@@ -19,6 +19,11 @@ async def Путин(ctx):
     author = ctx.message.author
     await ctx.send("вор")
 
+@Bot.command()
+async def го играть(ctx):
+    everyone = ctx.message.everyone
+    await ctx.send(f"го играть {everyone.mention}")
+    
 token = os.environ.get("BOT_TOKEN")
 
 Bot.run(token)
