@@ -20,9 +20,9 @@ async def Путин(ctx):
     await ctx.send("вор")
 
 @Bot.command()
-async def го играть(ctx):
-    everyone = ctx.message.everyone
-    await ctx.send(f"го играть {everyone.mention}")
+async def  ид(ctx):
+    author = ctx.message.author
+    await ctx.send(f" id {author.mention}")
     
 token = os.environ.get("BOT_TOKEN")
 
