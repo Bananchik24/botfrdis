@@ -15,3 +15,5 @@ async def hello(ctx):
     await ctx.send(f"Hello my friend {author.mention}")
 
 token = os.environ.get("BOT_TOKEN")
+
+bot.run(str(token))
