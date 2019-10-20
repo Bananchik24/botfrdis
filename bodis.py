@@ -13,6 +13,11 @@ async def on_ready():
 async def hello(ctx):
     author = ctx.message.author
     await ctx.send(f"Hello my friend {author.mention}")
+    
+@Bot.command()
+async def Путин(ctx):
+    author = ctx.message.author
+    await ctx.send("вор")
 
 token = os.environ.get("BOT_TOKEN")
 
